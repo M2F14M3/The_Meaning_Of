@@ -1,0 +1,65 @@
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#p1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#form1 {
+    display: block;
+}
+
+#form-mobile {
+    display: none;
+}
+
+td {
+    text-align: center;
+}
+
+#buttons-mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Username, #Mail {
+    width: 98%;
+}
+#Message {
+    width: 98.3%;
+    height: 10em;
+    resize: none;
+}
+
+input, input::-webkit-input-placeholder, textarea {
+    font-size: 1em;
+}
+
+.privacy-link {
+    color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+
+    #form-mobile {
+        display: block;
+    }
+
+    #form1 {    
+        display: none;
+    }
+
+    #Username-mobile,
+    #Mail-mobile {
+        width: 99%;
+    }
+    #Message-mobile {
+        width: 99.2%;
+        height: 13em;
+        resize: none;
+    }
+
+} 

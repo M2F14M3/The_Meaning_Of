@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>TheMeaningOf</title>
+	<link rel="stylesheet" href="resources/css/global-layout.css" />
+    <link rel="stylesheet" href="resources/css/form-content.css" />
+	<script src="resources/js/script.js" defer>
+
+	</script>
+</head>
+
+<body onload="year()">
+	<div id="header">
+		<a href="index.html">
+			<img src="resources/images/logo.png" id="logo" />
+            TheMeaningOf
+        </a>
+    </div>
+    <div id="data">
+        <aside>
+            <div class="menu-links">
+                <a href="News.html">
+                    News
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+            <div class="menu-links">
+                <a href="Psychology.html">
+                    Psychology
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+            <div class="menu-links">
+                <a href="Bookspills.html">
+                    Books Pills
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+            <div class="menu-links active-link">
+                <a href="Latestposts.html">
+                    Latest Posts
+                    <span class="link-spanner"></span>
+                </a>
+            </div>
+        </aside>
+        <div id="content">
+            <div id="p1">
+                <h1> ASK TO PSY!</h1>
+                Hi, I'm Elisa. Ask me what you want: self-esteem, adolescence, emotions, anxiety, panic attacks or ask me about personal situations.
+                <br /> Fill in the form, I'm here to help you as I can and if necessary, to direct you to a psychological path that is right to you.
+            </div>
+            <div id="form1">
+                <form action="resources/php/script.php" method="post">
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <label for="Username" id="username-label">
+                                    Enter name
+                                </label>
+                            </td>
+                            <td>
+                                <input type="text" name="Username" placeholder="Enter name" id="Username" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Mail" id="mail-label">
+                                    Enter mail
+                                </label>
+                            </td>
+                            <td>
+                                <input type="email" name="Mail" id="Mail" placeholder="Enter mail" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Message" id="massage-label">
+                                    Type message
+                                </label>
+                            </td>
+                            <td>
+                                <textarea name="Message" id="Message" placeholder="How can I help a depressed teenager? I can no longer study, what can I do? I don't know how to get out of a toxic relationship, help me! I often get anxious, what can I do? Why Novax people do not believe the official data? "
+                                        required>
+</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="privacy-check" /> 
+                                    <label for="privacy-check">
+                                        By using this form you agree with the storage and handling of your data by this website in accordance with our <a href="https://www.privacypolicies.com/live/dcfaf0e9-8f70-4b7d-8bad-bf26ecea1406" class="privacy-link"> Privacy Policy </a>
+                                    </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="reset" value="Reset" />
+                            </td>
+                            <td>
+                                <input type="submit" value="Submit" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="form-mobile">
+                <form action="assets/php/script.php" method="post">
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <label for="Username-mobile" id="username-label">
+                                    Enter name
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="Username-mobile" placeholder="Enter name" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Mail-mobile" id="mail-label">
+                                    Enter mail
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="email" id="Mail-mobile" placeholder="Enter mail" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Message-mobile" id="massage-label">
+                                    Type message
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea id="Message-mobile" placeholder="How can I help a depressed teenager? I can no longer study, what can I do? I don't know how to get out of a toxic relationship, help me! I often get anxious, what can I do? Why Novax people do not believe the official data? "
+                                    required>
+</textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" id="privacy-check-mobile" /> 
+                                    <label for="privacy-check-mobile">
+                                        By using this form you agree with the storage and handling of your data by this website in accordance with our <a href="https://www.privacypolicies.com/live/dcfaf0e9-8f70-4b7d-8bad-bf26ecea1406" class="privacy-link"> Privacy Policy </a>
+                                    </label>
+                                </td>
+                            </tr>
+                        <tr>
+                            <td colspan="2" id="buttons-mobile">
+                                <input type="reset" value="Reset" />
+                                <input type="submit" value="Submit" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+	<footer>
+        @<span id="anno"></span>
+        <a href="mailto:greta.castellano@studenti.unimi.it" id="mail">
+            greta.castellano@studenti.unimi.it</a>
+        <a href="https://www.instagram.com/_themeaningof_" target="blank">
+            <img src="resources/images/instagram.png" id="ig-logo" />
+        </a>
+    </footer>
+</body>
+
+</html>

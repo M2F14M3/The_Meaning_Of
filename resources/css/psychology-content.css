@@ -1,0 +1,54 @@
+#video1 {
+    grid-area: video1;
+}
+
+#p1 {
+    grid-area: p1;
+}
+
+#video2 {
+    grid-area: video2;
+}
+
+#p2 {
+    grid-area: p2;
+}
+
+#ask {
+    display: flex;
+    font-size: 1.5em;
+    grid-area: ask;
+    justify-content: center;
+}
+
+.ask-link {
+    color: white;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: auto auto 1.2em;
+    grid-template-areas: 'video1 p1' 'video2 p2' 'ask ask';
+}
+
+div#video1, div#video2 {
+    display: inline;
+    zoom: 1.2;
+    padding-left: 10%
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+
+    #content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div#video1, div#video2 {
+        zoom: 1;
+        padding: 0%;
+    }
+
+} 

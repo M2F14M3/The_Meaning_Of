@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&family=Ubuntu:wght@500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+head {
+    width: 100%;
+    height: 100vh;
+    margin: unset;
+    padding: unset;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr 1.2em;
+    grid-template-areas: 'header' 'data' 'footer';
+}
+
+#header {
+    grid-area: header;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 2em;
+    color: #3535fd;
+    background-color: #FFFF42;
+}
+
+#logo {
+    position: relative;
+    top: 11%;
+}
+
+#data {
+    grid-area: data;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: #3535fd;
+}
+
+#content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #3535fd;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+    height: fit-content;
+    background-color: #FFFF42;
+}
+
+aside.a {
+	width: 100%;
+    height: 150px;
+	z-index: 1;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+  
+aside>div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    color: white;
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
+}
+
+aside>div.active-link {
+    z-index: 1;
+}
+
+a {
+    color: #0F0F42;
+    text-decoration: none;
+}
+
+div.menu-links>a {
+    padding: auto 0% auto 0%;
+    color: white;
+}
+
+aside>div:hover {
+    background-color: black;
+}
+
+#active-page {
+    background-color: black;
+}
+
+.link-spanner{
+    position:absolute; 
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+aside {
+    grid-area: aside;
+    width: 25%;
+	height: 100%;
+	display: grid;
+	font-size: 1.3em;
+	text-decoration: none;
+    background-color: #0F0F42;
+    border-bottom: 1px white solid;
+}
+
+#mail {
+    padding-right: 0.5em;
+}
+
+#anno {
+    padding-right: 3px;
+}
+
+#ig-logo {
+    display: inline;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+    #header {
+        font-size: 2em;
+        padding: 10px 0px 5px 12px;
+    }
+
+    #data {
+        flex-direction: column;
+        width: 99.9%;
+    }
+
+    aside {
+        width: 100%;
+	    height: fit-content;
+        overflow: hidden;
+    }
+
+}
